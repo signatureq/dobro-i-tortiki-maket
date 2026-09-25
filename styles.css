@@ -60,7 +60,7 @@ h1,h2,.process-step h3{-webkit-text-stroke:1px currentColor}
 .mosaic-one{grid-column:1;grid-row:1/3}.mosaic-one img{object-position:52% center}
 .mosaic-two{grid-column:2;grid-row:1}.mosaic-two img{object-position:55% 54%}
 .mosaic-three{grid-column:2;grid-row:2}.mosaic-three img{object-position:45% 55%}
-.mosaic-four{grid-column:3;grid-row:1/3}.mosaic-four img{object-position:45% center}
+.mosaic-four{grid-column:3;grid-row:1/3}.mosaic-four img{object-position:45% top}
 .mosaic-five{grid-column:1;grid-row:3/5}.mosaic-five img{object-position:48% center}
 .mosaic-note{grid-column:2/4;grid-row:3;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:11px 19px;background:var(--white);border-radius:15px;font-family:var(--font-display);font-size:20px;text-transform:uppercase;white-space:nowrap}
 .mosaic-note strong{font-weight:700}
@@ -70,7 +70,7 @@ h1,h2,.process-step h3{-webkit-text-stroke:1px currentColor}
 .mosaic-socials button svg{width:20px;height:20px;fill:currentColor}
 .mosaic-socials button span{font-family:var(--font-body);font-size:16px;font-weight:800;line-height:1;text-transform:none;letter-spacing:-.07em}
 .mosaic-socials button:last-child span{font-size:18px;letter-spacing:-.08em}
-.mosaic-six{grid-column:2/4;grid-row:4}.mosaic-six img{object-position:center 49%}
+.mosaic-six{grid-column:2/4;grid-row:4}.mosaic-six img{object-position:center top}
 .benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:238px;gap:20px}
 .benefit-card{align-self:center;display:grid;place-items:center;align-content:center;gap:10px;height:130px;padding:15px 12px;border:1.5px solid var(--line);border-radius:16px;text-align:center;background:var(--cream)}
 .benefit-card span{font-family:var(--font-display);font-size:23px;color:var(--warm-dark)}
