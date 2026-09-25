@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffaf5">
+  <meta name="description" content="Макет сайта детской кондитерской школы «Добро и Тортики»: курсы, мастер-классы и сладкие праздники.">
+  <title>Добро и Тортики — детская кондитерская школа</title>
+  <link rel="preload" href="assets/fonts/neucha-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержимому</a>
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="brand" href="#top" aria-label="Добро и Тортики — на главную">
+        <span class="brand-emblem"><img src="assets/client-logo.jpg" alt=""></span>
+        <span class="brand-wordmark">Добро<br><small>и тортики</small></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Главное меню">
+        <a href="#about">О нас</a>
+        <a href="#formats">Услуги</a>
+        <a href="#atmosphere">Атмосфера</a>
+        <a href="#gallery">Фото</a>
+        <a href="#questions">Вопросы</a>
+      </nav>
+      <a class="header-secondary" href="#formats">Наши программы</a>
+      <a class="header-action" href="#contact">Записаться</a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-controls="main-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">Сделай свой<br>первый торт<br><em>своими руками</em></h1>
+        <p class="hero-lead">Кондитерская школа, где сладкие идеи превращаются в настоящие десерты. Рядом — мастер, а в руках — всё для творчества.</p>
+        <div class="hero-facts" aria-label="Направления школы">
+          <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M6 24h20M8 15c2-5 5-7 8-7s6 2 8 7v9H8v-9Zm0 2c4 2 12 2 16 0"/></svg></span><span>курс<br>«Юный кондитер»</span></div>
+          <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="8" width="22" height="19" rx="2"/><path d="M10 5v6m12-6v6M5 15h22m-15 5h3m4 0h3"/></svg></span><span>мастер-классы<br>выходного дня</span></div>
+          <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M7 18h18v9H7v-9Zm2-4c0-3 3-5 7-5s7 2 7 5v4H9v-4ZM16 4v5m-2-6c1 0 2-1 2-2 1 1 2 2 2 3"/></svg></span><span>сладкие<br>дни рождения</span></div>
+          <div class="fact"><span class="fact-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="5" y="13" width="22" height="14" rx="2"/><path d="M11 13V9c0-2 2-3 5-3s5 1 5 3v4M5 18h22m-12 0v3h2v-3"/></svg></span><span>выездные<br>мастер-классы</span></div>
+        </div>
+        <div class="hero-actions">
+          <a class="button button-warm" href="#contact">Записаться онлайн</a>
+          <button class="button button-pink" type="button" data-demo-contact="MAX">Написать в MAX</button>
+        </div>
+      </div>
+      <div class="hero-mosaic" aria-label="Иллюстративные фотографии кондитерских занятий">
+        <figure class="mosaic-photo mosaic-one"><img src="assets/desserts.jpg" alt="Десерты на столе" fetchpriority="high"></figure>
+        <figure class="mosaic-photo mosaic-two"><img src="assets/hero.jpg" alt="Ягодный торт" fetchpriority="high"></figure>
+        <figure class="mosaic-photo mosaic-three"><img src="assets/weekend.jpg" alt="Украшение капкейков"></figure>
+        <figure class="mosaic-photo mosaic-four"><img src="assets/offsite.jpg" alt="Кондитер помогает детям готовить"></figure>
+        <figure class="mosaic-photo mosaic-five"><img src="assets/birthday.jpg" alt="Дети у праздничного торта"></figure>
+        <div class="mosaic-note" aria-label="Связь с администратором школы">
+          <strong>Администратор школы</strong>
+          <div class="mosaic-socials" aria-label="Мессенджеры школы">
+            <button type="button" data-demo-contact="Telegram" aria-label="Написать администратору в Telegram" title="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 4-3.5 16-5.3-4.1-2.8 2.7.6-4.7L20 5.5 7.9 13l-4.9-1.5L21 4Z"/></svg></button>
+            <button type="button" data-demo-contact="ВКонтакте" aria-label="Написать администратору ВКонтакте" title="ВКонтакте"><span aria-hidden="true">vk</span></button>
+            <button type="button" data-demo-contact="MAX" aria-label="Написать администратору в MAX" title="MAX"><span aria-hidden="true">M</span></button>
+          </div>
+        </div>
+        <figure class="mosaic-photo mosaic-six"><img src="assets/weekend.jpg" alt="Дети готовят сладости вместе"></figure>
+      </div>
+    </section>
+
+    <section class="benefits section-pad" id="about" aria-labelledby="benefits-title">
+      <div class="container">
+        <h2 class="section-title center" id="benefits-title">Что остаётся после занятия</h2>
+        <div class="benefit-grid">
+          <div class="benefit-card"><span>01</span><p>Радость от того,<br>что получилось</p></div>
+          <div class="benefit-card"><span>02</span><p>Смелость пробовать<br>новое</p></div>
+          <figure class="benefit-photo"><img src="assets/birthday.jpg" alt="Дети рассматривают праздничный торт" loading="lazy"></figure>
+          <figure class="benefit-photo"><img src="assets/desserts.jpg" alt="Готовые десерты" loading="lazy"></figure>
+          <figure class="benefit-photo"><img src="assets/offsite.jpg" alt="Дети готовят вместе с кондитером" loading="lazy"></figure>
+          <figure class="benefit-photo"><img src="assets/weekend.jpg" alt="Дети украшают капкейки" loading="lazy"></figure>
+          <div class="benefit-card"><span>03</span><p>Время, проведённое<br>вместе</p></div>
+          <div class="benefit-card"><span>04</span><p>Новый сладкий<br>навык</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process section-pad" id="process" aria-labelledby="process-title">
+      <div class="container">
+        <h2 class="section-title center" id="process-title">Как проходит мастер-класс</h2>
+        <div class="process-grid">
+          <article class="process-step"><span class="step-number">1</span><h3>Знакомимся</h3><p>Встречаемся, выбираем сладкую идею и узнаём, что будем делать.</p></article>
+          <article class="process-step"><span class="step-number">2</span><h3>Готовим</h3><p>Пробуем приёмы и постепенно превращаем ингредиенты в десерт.</p></article>
+          <article class="process-step"><span class="step-number">3</span><h3>Украшаем</h3><p>Добавляем цвет, детали и собственный характер каждой работе.</p></article>
+          <article class="process-step"><span class="step-number">4</span><h3>Любуемся</h3><p>Смотрим, как идея стала настоящим сладким результатом.</p></article>
+          <article class="process-step"><span class="step-number">5</span><h3>Делимся радостью</h3><p>Уносим с занятия впечатления и свой десерт.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="formats section-pad" id="formats" aria-labelledby="formats-title">
+      <div class="container">
+        <h2 class="section-title center" id="formats-title">Выберите сладкое событие</h2>
+        <div class="format-grid">
+          <article class="format-card"><img src="assets/hero.jpg" alt="Ребёнок украшает ягодный торт" loading="lazy"><div class="format-content"><h3>Базовый курс<br>«Юный кондитер»</h3><a class="button button-warm" href="#contact">Узнать больше</a></div></article>
+          <article class="format-card"><img src="assets/weekend.jpg" alt="Дети украшают капкейки" loading="lazy"><div class="format-content"><h3>Мастер-классы<br>выходного дня</h3><a class="button button-warm" href="#contact">Узнать больше</a></div></article>
+          <article class="format-card"><img src="assets/birthday.jpg" alt="Дети у праздничного торта" loading="lazy"><div class="format-content"><h3>Сладкие<br>дни рождения</h3><a class="button button-warm" href="#contact">Узнать больше</a></div></article>
+          <article class="format-card"><img src="assets/offsite.jpg" alt="Кондитер помогает детям украшать десерты" loading="lazy"><div class="format-content"><h3>Выездные<br>мастер-классы</h3><a class="button button-warm" href="#contact">Узнать больше</a></div></article>
+        </div>
+        <a class="button button-pink all-formats" href="#contact">Обсудить занятие</a>
+      </div>
+    </section>
+
+    <section class="atmosphere section-pad" id="atmosphere" aria-labelledby="atmosphere-title">
+      <div class="container">
+        <h2 class="section-title center" id="atmosphere-title">Атмосфера школы</h2>
+        <div class="atmosphere-grid">
+          <div class="atmo-tile atmo-note atmo-a"><img src="assets/decor-cupcake.svg" alt="" aria-hidden="true"><p>Здесь сладкие идеи становятся настоящими.</p></div>
+          <figure class="atmo-tile atmo-photo atmo-b"><img src="assets/desserts.jpg" alt="Десерты на столе" loading="lazy"></figure>
+          <div class="atmo-tile atmo-note atmo-c"><p>Можно пробовать, фантазировать и радоваться тому, что получилось.</p></div>
+          <figure class="atmo-tile atmo-photo atmo-d"><img src="assets/weekend.jpg" alt="Дети готовят капкейки" loading="lazy"></figure>
+          <figure class="atmo-tile atmo-photo atmo-e"><img src="assets/offsite.jpg" alt="Занятие с кондитером" loading="lazy"></figure>
+          <figure class="atmo-tile atmo-photo atmo-f"><img src="assets/hero.jpg" alt="Украшение торта" loading="lazy"></figure>
+          <figure class="atmo-tile atmo-photo atmo-g"><img src="assets/birthday.jpg" alt="Праздник с тортом" loading="lazy"></figure>
+          <div class="atmo-tile atmo-note atmo-h"><img src="assets/decor-cherries.svg" alt="" aria-hidden="true"><p>Каждый десерт получается по-своему особенным.</p></div>
+          <figure class="atmo-tile atmo-photo atmo-i"><img src="assets/desserts.jpg" alt="Торт и капкейки" loading="lazy"></figure>
+          <figure class="atmo-tile atmo-photo atmo-j"><img src="assets/offsite.jpg" alt="Совместное кондитерское творчество" loading="lazy"></figure>
+        </div>
+        <a class="button button-pink atmosphere-action" href="#formats">Выбрать занятие</a>
+      </div>
+    </section>
+
+    <section class="gallery section-pad" id="gallery" aria-labelledby="gallery-title">
+      <h2 class="section-title center" id="gallery-title">Сладкие работы</h2>
+      <div class="gallery-strip" aria-label="Иллюстративная галерея десертов">
+        <img src="assets/desserts.jpg" alt="Торт и капкейки" loading="lazy">
+        <img src="assets/hero.jpg" alt="Ягодный торт" loading="lazy">
+        <img src="assets/weekend.jpg" alt="Капкейки на мастер-классе" loading="lazy">
+        <img src="assets/birthday.jpg" alt="Праздничный торт" loading="lazy">
+        <img src="assets/offsite.jpg" alt="Украшение печенья" loading="lazy">
+      </div>
+      <p class="image-disclaimer">Для согласования макета использованы иллюстративные изображения. В готовой версии здесь будут фотографии работ школы.</p>
+    </section>
+
+    <section class="reviews section-pad" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 class="section-title center" id="reviews-title">Отзывы наших гостей</h2>
+        <div class="reviews-grid">
+          <div class="review-card"><span class="quote-mark" aria-hidden="true">“</span><strong>О занятиях</strong><p>Место для настоящего отзыва о кондитерском курсе.</p></div>
+          <div class="review-card"><span class="quote-mark" aria-hidden="true">“</span><strong>О праздниках</strong><p>Место для настоящего отзыва о сладком дне рождения.</p></div>
+          <div class="review-card"><span class="quote-mark" aria-hidden="true">“</span><strong>О мастер-классах</strong><p>Место для настоящего отзыва о встрече в школе.</p></div>
+        </div>
+        <p class="reviews-note">Отзывы появятся после получения текстов и разрешения на публикацию.</p>
+      </div>
+    </section>
+
+    <section class="questions section-pad" id="questions" aria-labelledby="questions-title">
+      <div class="container">
+        <h2 class="section-title center" id="questions-title">Частые вопросы</h2>
+        <div class="faq-list">
+          <details><summary>С какого возраста можно прийти на занятие?<span aria-hidden="true">+</span></summary><p>Возраст участников уточним у школы для каждого направления.</p></details>
+          <details><summary>Нужен ли опыт в приготовлении десертов?<span aria-hidden="true">+</span></summary><p>Требования к подготовке уточним у школы перед запуском сайта.</p></details>
+          <details><summary>Что входит в занятие?<span aria-hidden="true">+</span></summary><p>Состав занятия и материалы будут указаны после согласования программ.</p></details>
+          <details><summary>Как выбрать дату и записаться?<span aria-hidden="true">+</span></summary><p>Добавим актуальное расписание и способ записи, когда школа предоставит детали.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-pad" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-copy"><h2 class="section-title" id="contact-title">Попробуйте то, что ещё не делали</h2><p>Выберите направление и расскажите, какое сладкое событие хочется устроить. В финальной версии здесь будут условия и контакты школы.</p><img src="assets/client-logo.jpg" alt="Логотип школы «Добро и Тортики»"></div>
+        <form class="contact-form" id="mock-form"><h3>Оставить заявку</h3><label>Ваше имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться" required></label><label>Телефон<input name="phone" type="tel" autocomplete="tel" placeholder="Номер для связи" required></label><button class="button button-warm" type="submit">Записаться</button><p class="form-note">Демо-форма макета: данные никуда не отправляются.</p><p class="form-result" role="status" aria-live="polite"></p></form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid"><a href="#top" class="footer-brand">Добро и Тортики</a><div class="footer-links"><a href="#about">О школе</a><a href="#formats">Услуги</a><a href="#gallery">Фото</a><a href="#questions">Вопросы</a></div><p>Визуальный макет для согласования. Фотографии иллюстративные; цены, расписание и контакты добавляются после получения данных школы.</p></div></footer>
+  <a class="floating-booking" href="#contact">Запись</a>
+  <p class="demo-toast" role="status" aria-live="polite" hidden></p>
+</body>
+</html>
