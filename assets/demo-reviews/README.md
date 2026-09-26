@@ -1,1 +1,0 @@
-These three portraits were generated with imagegen on 2026-09-26 for explicitly labeled fictional demo testimonials. They do not depict actual school customers. Keep the visible disclosure when publishing this mockup.
