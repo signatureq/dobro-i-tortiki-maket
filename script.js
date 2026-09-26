@@ -29,10 +29,16 @@ document.querySelectorAll('.faq-list details').forEach(item => {
 });
 
 const mockForm = document.querySelector('#mock-form');
-mockForm.addEventListener('submit', event => {
+mockForm?.addEventListener('submit', event => {
   event.preventDefault();
   mockForm.querySelector('.form-result').textContent = 'Это макет: заявка не отправлена. После согласования подключим запись.';
 });
+
+const selectedProgram = new URLSearchParams(window.location.search).get('program');
+if (mockForm && selectedProgram) {
+  const select = mockForm.elements.program;
+  if ([...select.options].some(option => option.value === selectedProgram)) select.value = selectedProgram;
+}
 
 const demoToast = document.querySelector('.demo-toast');
 let toastTimeout;
@@ -50,7 +56,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
   const plan = [
     ['.hero h1','left',0], ['.hero-lead','left',110], ['.hero-facts','left',210], ['.hero-actions','left',320],
     ['.benefits .section-title','up',0], ['.process .section-title','up',0],
-    ['.formats .section-title','up',0], ['.atmosphere .section-title','up',0],
+    ['.schedule .section-title','up',0], ['.formats .section-title','up',0], ['.atmosphere .section-title','up',0],
     ['.gallery .section-title','up',0], ['.reviews .section-title','up',0],
     ['.questions .section-title','up',0], ['.contact-copy','left',0], ['.contact-form','right',120]
   ];
@@ -61,7 +67,7 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
     element.style.setProperty('--reveal-delay', `${delay}ms`);
   }
   const groups = [
-    ['.mosaic-photo','image',85], ['.benefit-grid > *','up',65],
+    ['.mosaic-photo','image',85], ['.benefit-grid > *','up',65], ['.schedule-grid > *','up',70], ['.school-photos figure','image',80], ['.teacher-photo','image',0], ['.teacher-copy','up',80], ['.gallery-grid figure','image',60], ['.service-heading','left',0], ['.service-hero-photo','image',110], ['.service-photos figure','image',80],
     ['.process-step','up',75], ['.format-card','up',90],
     ['.atmo-tile','image',55], ['.gallery-strip img','image',60],
     ['.review-card','up',90], ['.faq-list details','up',55]
@@ -73,8 +79,10 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
     });
   }
   const mosaicNote = document.querySelector('.mosaic-note');
-  mosaicNote.dataset.reveal = 'up';
-  mosaicNote.style.setProperty('--reveal-delay','380ms');
+  if (mosaicNote) {
+    mosaicNote.dataset.reveal = 'up';
+    mosaicNote.style.setProperty('--reveal-delay','380ms');
+  }
 
   const observer = new IntersectionObserver((entries,current) => {
     for (const entry of entries) {
@@ -85,4 +93,13 @@ if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'Intersect
   }, {threshold:.06,rootMargin:'0px 0px -6% 0px'});
   document.documentElement.classList.add('motion-ready');
   document.querySelectorAll('[data-reveal]').forEach(element => observer.observe(element));
+}
+
+// The form is already the booking destination; keep its controls unobstructed.
+const contactSection = document.querySelector('.contact');
+const floatingBooking = document.querySelector('.floating-booking');
+if (contactSection && floatingBooking && 'IntersectionObserver' in window) {
+  new IntersectionObserver(([entry]) => {
+    floatingBooking.hidden = entry.isIntersecting;
+  }, {threshold: 0.05}).observe(contactSection);
 }
