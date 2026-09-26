@@ -5,11 +5,6 @@
     "filename": "IMG_20251129_130752.jpg"
   },
   {
-    "asset": "photos/velvet-033.jpg",
-    "source": "https://disk.yandex.ru/d/0Xrej3LFWDKR4Q",
-    "filename": "IMG_20251129_132011.jpg"
-  },
-  {
     "asset": "photos/velvet-123.jpg",
     "source": "https://disk.yandex.ru/d/0Xrej3LFWDKR4Q",
     "filename": "IMG_20251130_153517.jpg"
@@ -23,11 +18,6 @@
     "asset": "photos/velvet-190.jpg",
     "source": "https://disk.yandex.ru/d/0Xrej3LFWDKR4Q",
     "filename": "photo_11_2025-12-03_00-23-52.jpg"
-  },
-  {
-    "asset": "photos/gingerbread-005.jpg",
-    "source": "https://disk.yandex.ru/d/_2367hXukMY8dQ",
-    "filename": "2025-12-27 13-55-13.JPG"
   },
   {
     "asset": "photos/gingerbread-057.jpg",
@@ -75,11 +65,6 @@
     "filename": "DSC09624.jpg"
   },
   {
-    "asset": "photos/meringue-038.jpg",
-    "source": "https://disk.yandex.ru/d/lGDsvAwU0UfsRA",
-    "filename": "DSC09673.jpg"
-  },
-  {
     "asset": "photos/meringue-039.jpg",
     "source": "https://disk.yandex.ru/d/lGDsvAwU0UfsRA",
     "filename": "DSC09686.jpg"
@@ -110,11 +95,6 @@
     "filename": "DSC04016.jpg"
   },
   {
-    "asset": "photos/class-135.jpg",
-    "source": "https://disk.yandex.ru/d/zcRu2CyKJVQ4Gw",
-    "filename": "DSC04021.jpg"
-  },
-  {
     "asset": "photos/class-154.jpg",
     "source": "https://disk.yandex.ru/d/zcRu2CyKJVQ4Gw",
     "filename": "DSC04195.jpg"
@@ -123,10 +103,6 @@
     "asset": "photos/class-162.jpg",
     "source": "https://disk.yandex.ru/d/zcRu2CyKJVQ4Gw",
     "filename": "DSC04231.jpg"
-  },
-  {
-    "asset": "photos/anastasia.jpg",
-    "source": "Client Word document «сайт школы.docx», embedded portrait"
   },
   {
     "asset": "photos/video-poster.jpg",
@@ -182,5 +158,30 @@
     "asset": "photos/DSC08385.jpg",
     "source": "Client archive «МК-день рождения, кондитерская школа - 26.10.25.zip»",
     "filename": "DSC08385.jpg"
+  },
+  {
+    "asset": "photos/class-140.jpg",
+    "source": "https://disk.yandex.ru/d/zcRu2CyKJVQ4Gw",
+    "filename": "DSC04108.jpg"
+  },
+  {
+    "asset": "photos/class-136.jpg",
+    "source": "https://disk.yandex.ru/d/zcRu2CyKJVQ4Gw",
+    "filename": "DSC04027.jpg"
+  },
+  {
+    "asset": "photos/meringue-036.jpg",
+    "source": "https://disk.yandex.ru/d/lGDsvAwU0UfsRA",
+    "filename": "DSC09650.jpg"
+  },
+  {
+    "asset": "photos/anastasia-workshop.jpg",
+    "source": "https://disk.yandex.ru/d/lGDsvAwU0UfsRA",
+    "filename": "DSC09454.jpg"
+  },
+  {
+    "asset": "photos/DSC07790.jpg",
+    "source": "Client archive «МК-день рождения, кондитерская школа - 26.10.25.zip»",
+    "filename": "DSC07790.jpg"
   }
 ]

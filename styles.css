@@ -288,14 +288,36 @@ h1,h2,h3{text-wrap:balance}
 @media (max-width:1100px){.brand{min-width:185px}.main-nav{gap:16px}.main-nav a{font-size:15px}.format-content{padding:19px}.format-content h3{font-size:27px}.school-intro,.teacher-grid,.service-info{gap:38px}.school-copy h3{font-size:40px}.service-hero{gap:35px}.benefit-item>img{height:210px}}
 @media (max-width:930px){.welcome{padding-top:23px}.hero h1{font-size:56px}.hero-copy{max-width:none}.hero{min-height:0}.benefit-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px 15px}.benefit-item>img{height:180px}.benefit-item>div{gap:10px;padding-inline:0}.benefit-item h3{font-size:15px}.benefit-item .pastry-icon{width:29px}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.schedule-grid{gap:25px}.schedule-grid h3{font-size:28px}.schedule-weekend{padding:25px}.timetable dt,.timetable dd{font-size:14px}.format-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.format-content h3{min-height:65px}.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery-grid img{height:310px}.reviews-grid{grid-template-columns:1fr}.review-card{padding:27px}.review-card>p{max-width:75ch}.school-copy h3{font-size:35px}.school-copy li{font-size:14px}.school-copy li strong{font-size:16px}.school-intro{gap:28px}.school-photos img{height:220px}.teacher-grid{gap:30px;grid-template-columns:.8fr 1.2fr}.teacher-copy .section-title{font-size:38px}.teacher-copy p{font-size:14px}.teacher-copy blockquote{font-size:24px}.contact-grid{gap:30px}.contact-copy .contact-photos img{height:150px}.service-hero-photo img{height:420px}.service-heading h1{font-size:49px}.service-info{gap:30px}.service-description p{font-size:16px}.service-conditions{padding:25px}.service-photos img{height:265px}}
 @media (max-width:600px){.welcome{font-size:12px;line-height:1.6;padding-top:23px}.welcome p+p{margin-top:8px}.hero{padding-top:25px}.hero h1{font-size:clamp(39px,10.2vw,58px)}.hero-lead{font-size:15px}.fact .pastry-icon{width:24px;height:24px}.mosaic-note{font-size:18px}.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 12px}.benefit-item>img{height:180px}.benefit-item>div{display:block;padding-top:13px}.benefit-item .pastry-icon{width:27px;height:27px;margin-bottom:5px}.benefit-item h3{font-size:14px;line-height:1.45;text-wrap:initial}.process-grid{grid-template-columns:1fr;gap:26px}.process-step{padding-left:55px;position:relative}.step-number{position:absolute;left:0;top:0}.process-step h3{margin-top:0;font-size:25px}.schedule-grid{grid-template-columns:1fr;gap:30px}.schedule-grid h3{font-size:31px}.schedule-weekend{padding:25px}.timetable dt,.timetable dd{font-size:15px}.schedule-grid p{font-size:14px}.format-grid{grid-template-columns:1fr;gap:24px}.format-content{padding:22px}.format-content h3{min-height:0;font-size:31px}.format-content>p{font-size:15px}.format-content .format-price{font-size:24px}.format-price small{min-height:0}.format-card>img{height:270px}.school-intro{grid-template-columns:1fr;gap:35px}.school-video video{height:420px;max-height:70vh;aspect-ratio:auto;object-fit:contain}.school-copy h3{font-size:38px}.school-copy li{font-size:15px}.school-copy li strong{font-size:17px}.school-photos{gap:10px;margin-top:28px}.school-photos img{height:150px;border-radius:12px}.teacher-grid{grid-template-columns:1fr;gap:30px}.teacher-photo{max-width:360px;margin-inline:auto}.teacher-photo img{max-height:455px}.teacher-copy .section-title{font-size:42px}.teacher-copy p{font-size:15px}.teacher-copy blockquote{font-size:27px}.gallery-grid{gap:22px 12px}.gallery-grid img{height:215px;border-radius:12px}.gallery-grid figcaption{font-size:12px}.demo-reviews-note{font-size:12px;margin-bottom:25px}.review-person h3{font-size:18px}.review-card>p{font-size:15px}.review-actions{display:grid;grid-template-columns:1fr;gap:12px}.review-actions .button{font-size:18px}.contact-copy .section-title{font-size:45px}.contact-copy .contact-photos img{height:190px}.contact-grid{grid-template-columns:1fr;gap:30px}.contact-form select{font-size:13px}.breadcrumbs{padding-top:25px}.service-hero{grid-template-columns:1fr;gap:28px;padding:28px 0 45px}.service-heading h1{font-size:47px}.service-lead{font-size:18px}.service-hero-photo img{height:330px}.service-info{grid-template-columns:1fr;padding-bottom:65px}.service-description h2{font-size:32px}.service-description li{font-size:15px}.service-conditions{padding:25px}.service-conditions .service-price{font-size:29px}.service-photos{grid-template-columns:1fr;gap:16px}.service-photos img{height:320px}.service-back{flex-direction:column;align-items:stretch;padding:30px 0 65px}.service-back .text-link{margin-bottom:8px}.floating-booking{width:64px;height:64px;font-size:13px;bottom:12px;right:12px}}
-/* Focal points preserve faces in wide crops. */
-.mosaic-six img{object-position:center 18%}
-.benefit-item:nth-child(3)>img{object-position:center 18%}
+/* Match each photograph to a frame that preserves faces and finished desserts. */
+.hero-mosaic{grid-template-rows:155px 155px 72px 205px}
+.mosaic-two img{object-position:center 45%}
+.mosaic-six img{object-position:center 30%}
+.benefit-item>img{height:280px}
+.benefit-item:nth-child(1)>img{object-position:center 45%}
+.benefit-item:nth-child(2)>img{object-position:center 55%}
+.benefit-item:nth-child(3)>img{object-position:center 45%}
 .benefit-item:nth-child(6)>img{object-position:center 30%}
 .format-card:nth-child(2)>img{object-position:center 15%}
-.service-hero-photo img[src$="meringue-033.jpg"]{object-position:center top}
-.service-hero-photo img[src$="gingerbread-081.jpg"]{height:auto}
-.service-hero-photo img[src$="gingerbread-139.jpg"]{object-position:center 25%}
+.format-card:nth-child(4)>img{object-position:center 50%}
+.format-card:nth-child(6)>img{object-position:center 47%}
+.teacher-photo img{max-height:none}
+.gallery-grid,.school-photos,.service-photos{align-items:start}
+.gallery-grid img,.school-photos img,.service-photos img{height:auto;object-fit:contain}
+.service-hero-photo img{width:100%;height:auto;max-height:none;object-fit:contain;margin-inline:auto}
+.service-hero-photo img[src$="meringue-033.jpg"],.service-hero-photo img[src$="gingerbread-139.jpg"],.service-hero-photo img[src$="velvet-032.jpg"]{max-width:420px}
+.contact-copy .contact-photos img:last-child{object-position:center 55%}
+.contact-form,.contact-form input,.contact-form select{min-width:0}
 .floating-booking[hidden]{display:none}
-@media (max-width:600px){.mosaic-six img{object-position:center 12%}}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr}}
+@media (min-width:601px) and (max-width:1100px){.benefit-item>img{height:210px}}
+@media (max-width:600px){
+  .hero-mosaic{grid-template-rows:repeat(4,155px) 170px 64px}
+  .mosaic-five{grid-column:2;grid-row:3/5}
+  .mosaic-six{grid-column:1/3;grid-row:5}
+  .mosaic-note{grid-row:6}
+  .mosaic-six img{object-position:center 25%}
+  .benefit-item>img{height:180px}
+  .teacher-photo img{max-height:none}
+  .service-hero-photo img{max-height:none}
+}
 .school-video video{color:var(--white)}
